@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-spinner"></div>
+        <span class="sr-only">Carregando...</span>
+    </div>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="perfil.html" class="logo">
+                <i class="fas fa-calendar-alt logo-icon" aria-hidden="true"></i>
+                <span>SyncEventos</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="grupo.html" class="nav-link">Grupos</a></li>
+                    <li class="nav-item"><a href="evento.html" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="fee.html" class="nav-link">Feedback</a></li>
+                    <li class="nav-item"><a href="categoria.html" class="nav-link">Categoria</a></li>
+
+                    <li class="nav-item">
+                        <button class="theme-toggle nav-link" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container profile-container">
+            <aside class="profile-sidebar">
+                <div class="profile-card">
+                    <img src="foto(xandao).jpg" alt="Foto de perfil" class="profile-avatar">
+                    <h2 class="profile-name">Xandão</h2>
+                    <div class="profile-username">@raphaelH</div>
+                    <p class="profile-bio">Treinar ne ?</p>
+
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">24</div>
+                            <div class="stat-label">Eventos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Grupos</div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-block">Editar Perfil</button>
+                </div>
+
+                <ul class="profile-menu">
+                    <li class="profile-menu-item">
+                        <a href="#sobre" class="profile-menu-link active">
+                            <i class="fas fa-user"></i>
+                            <span>Sobre</span>
+                        </a>
+                    </li>
+                    <li class="profile-menu-item">
+                        <a href="#eventos" class="profile-menu-link">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Meus Eventos</span>
+                        </a>
+                    </li>
+                    <li class="profile-menu-item">
+                        <a href="#grupos" class="profile-menu-link">
+                            <i class="fas fa-users"></i>
+                            <span>Meus Grupos</span>
+                        </a>
+                    </li>
+                    <li class="profile-menu-item">
+                        <a href="#interesses" class="profile-menu-link">
+                            <i class="fas fa-heart"></i>
+                            <span>Interesses</span>
+                        </a>
+                    </li>
+                    <li class="profile-menu-item">
+                        <a href="#configuracoes" class="profile-menu-link">
+                            <i class="fas fa-cog"></i>
+                            <span>Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+
+            <div class="profile-content">
+                <div class="profile-header">
+                    <h1 class="profile-title">Meu Perfil</h1>
+                    <div class="profile-actions">
+                        <button class="btn btn-outline">Compartilhar</button>
+                        <button class="btn btn-primary">Editar Perfil</button>
+                    </div>
+                </div>
+
+                <div class="profile-tabs">
+                    <div class="profile-tab active">Sobre</div>
+                    <div class="profile-tab">Eventos</div>
+                    <div class="profile-tab">Grupos</div>
+                    <div class="profile-tab">Interesses</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Informações Pessoais</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label class="form-label">Nome Completo</label>
+                                    <div class="form-control-static">RAPHAEL HENRIQUE DE OLIVEIRA</div>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label class="form-label">Data de Nascimento</label>
+                                    <div class="form-control-static">23/01/2008</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Bio</label>
+                            <div class="form-control-static">aposentado devendo pro serasa</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Informações de Contato</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label class="form-label">E-mail</label>
+                                    <div class="form-control-static">raphael.henrique@gmail,com</div>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label class="form-label">Telefone</label>
+                                    <div class="form-control-static">(41) 98765-4321</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Localização</label>
+                            <div class="form-control-static">Brasil</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Redes Sociais</label>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="social-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Meus Interesses</h2>
+                    </div>
+                    <div class="card-body">
+                        <div class="interests-list">
+                            <span class="interest-tag">
+                                Tecnologia
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <span class="interest-tag">
+                                Desenvolvimento Web
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <span class="interest-tag">
+                                JavaScript
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <span class="interest-tag">
+                                Node.js
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <span class="interest-tag">
+                                React
+                                <i class="fas fa-times"></i>
+                            </span>
+                            <span class="interest-tag">
+                                UX Design
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Eventos Recentes</h2>
+                        <a href="#" class="btn btn-sm btn-outline">Ver todos</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="events-grid">
+                            <div class="event-card">
+                                <div class="event-image"
+                                    style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80')">
+                                </div>
+                                <div class="event-body">
+                                    <h3 class="event-title">TEXTO</h3>
+                                    <div class="event-date">15 Out 2023</div>
+                                </div>
+                            </div>
+
+                            <div class="event-card">
+                                <div class="event-image"
+                                    style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80')">
+                                </div>
+                                <div class="event-body">
+                                    <h3 class="event-title">TEXTO</h3>
+                                    <div class="event-date">22 Set 2023</div>
+                                </div>
+                            </div>
+
+                            <div class="event-card">
+                                <div class="event-image"
+                                    style="background-image: url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=600&q=80')">
+                                </div>
+                                <div class="event-body">
+                                    <h3 class="event-title">TEXTO</h3>
+                                    <div class="event-date">10 Ago 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="perfil.js"></script>
+</body>
+
+</html>

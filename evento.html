@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="evento.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-spinner"></div>
+        <span class="sr-only">Carregando...</span>
+    </div>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="evento.html" class="logo">
+                <i class="fas fa-calendar-alt logo-icon" aria-hidden="true"></i>
+                <span>SyncEventos</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link ">Inicio</a></li>
+                    <li class="nav-item"><a href="grupo.html" class="nav-link ">Grupos</a></li>
+                    <li class="nav-item"><a href="evento.html" class="nav-link active">Eventos</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="fee.html" class="nav-link">feedback</a></li>
+                    <li class="nav-item"><a href="categoria.html" class="nav-link">Categoria</a></li>
+                    </a></li>
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle">
+                            <img src="foto(xandao).jpg" alt="Foto do perfil" class="nav-avatar">
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="perfil.html" class="dropdown-item">Meu Perfil</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="theme-toggle nav-link" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Eventos Comunitários</h1>
+                <div class="page-actions">
+                    <button class="btn btn-outline" id="filter-button">
+                        <i class="fas fa-filter"></i>
+                        <span>Filtrar</span>
+                    </button>
+                    <button class="btn btn-primary" id="create-event-button">
+                        <i class="fas fa-plus"></i>
+                        <span>Criar Evento</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="filters">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Buscar eventos...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <div class="filter-item">
+                    <button class="filter-select active">Todos</button>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-select">Próximos</button>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-select">Passados</button>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-select">Online</button>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-select">Presencial</button>
+                </div>
+            </div>
+
+            <div class="events-container">
+                <div class="event-card">
+                    <div class="event-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=600&q=80')">
+                        <span class="event-date">15 OUT</span>
+                        <span class="event-category">Tecnologia</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">TEXTO</h3>
+                        <p class="event-description">Venha conhecer as novidades do JavaScript ES2023 com palestras de
+                            especialistas e networking com a comunidade.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> São Paulo, SP</span>
+                            <span><i class="fas fa-clock"></i> 19:00 - 22:00</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="event-price">Grátis</div>
+                            <button class="btn btn-outline btn-sm">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=600&q=80')">
+                        <span class="event-date">22 NOV</span>
+                        <span class="event-category">Workshop</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">TEXTO</h3>
+                        <p class="event-description">Aprenda técnicas avançadas de TypeScript com exemplos práticos e
+                            projetos reais.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Online</span>
+                            <span><i class="fas fa-clock"></i> 09:00 - 17:00</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="event-price">R$ 199,90</div>
+                            <button class="btn btn-outline btn-sm">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=600&q=80')">
+                        <span class="event-date">10 DEZ</span>
+                        <span class="event-category">Hackathon</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">TEXTO</h3>
+                        <p class="event-description">Participe do maior hackathon de JavaScript do ano com prêmios e
+                            oportunidades de networking.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Rio de Janeiro, RJ</span>
+                            <span><i class="fas fa-clock"></i> 08:00 - 20:00</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="event-price">R$ 50,00</div>
+                            <button class="btn btn-outline btn-sm">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1541178735493-479c1a27ed24?auto=format&fit=crop&w=600&q=80')">
+                        <span class="event-date">05 JAN</span>
+                        <span class="event-category">Arte</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">TEXTO</h3>
+                        <p class="event-description">Exposição coletiva de artistas urbanos com workshops e bate-papos
+                            sobre street art.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Belo Horizonte, MG</span>
+                            <span><i class="fas fa-clock"></i> 14:00 - 19:00</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="event-price">Grátis</div>
+                            <button class="btn btn-outline btn-sm">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80')">
+                        <span class="event-date">20 JAN</span>
+                        <span class="event-category">Negócios</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">TEXTO</h3>
+                        <p class="event-description">Evento para empreendedores e startups com palestras de investidores
+                            e cases de sucesso.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Online</span>
+                            <span><i class="fas fa-clock"></i> 10:00 - 18:00</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="event-price">R$ 299,90</div>
+                            <button class="btn btn-outline btn-sm">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80')">
+                        <span class="event-date">15 FEV</span>
+                        <span class="event-category">Esportes</span>
+                    </div>
+                    <div class="event-body">
+                        <h3 class="event-title">TEXTO</h3>
+                        <p class="event-description">Corrida noturna com percursos de 5K e 10K, música ao vivo e
+                            premiação.</p>
+                        <div class="event-meta">
+                            <span><i class="fas fa-map-marker-alt"></i> Curitiba, PR</span>
+                            <span><i class="fas fa-clock"></i> 19:00 - 22:00</span>
+                        </div>
+                        <div class="event-footer">
+                            <div class="event-price">R$ 80,00</div>
+                            <button class="btn btn-outline btn-sm">Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="create-event-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Criar Novo Evento</h3>
+                <button class="modal-close" aria-label="Fechar modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="create-event-form">
+                <div class="form-group">
+                    <label for="event-name" class="form-label">Nome do Evento</label>
+                    <input type="text" id="event-name" class="form-control" placeholder="Ex: Meetup JavaScript SP"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-category" class="form-label">Categoria</label>
+                    <select id="event-category" class="form-control" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="technology">Tecnologia</option>
+                        <option value="business">Negócios</option>
+                        <option value="art">Arte</option>
+                        <option value="sports">Esportes</option>
+                        <option value="music">Música</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-description" class="form-label">Descrição</label>
+                    <textarea id="event-description" class="form-control form-textarea" placeholder="Descreva o evento"
+                        required></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="event-date" class="form-label">Data</label>
+                        <input type="date" id="event-date" class="form-control" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="event-time" class="form-label">Hora</label>
+                        <input type="time" id="event-time" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-location" class="form-label">Localização</label>
+                    <input type="text" id="event-location" class="form-control"
+                        placeholder="Endereço ou link para evento online" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="event-price" class="form-label">Preço (R$)</label>
+                    <input type="number" id="event-price" class="form-control" placeholder="0,00 para evento gratuito"
+                        min="0" step="0.01">
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline modal-close">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Criar Evento</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="evento.js"></script>
+</body>
+
+</html>

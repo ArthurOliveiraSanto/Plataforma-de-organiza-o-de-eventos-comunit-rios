@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-spinner"></div>
+        <span class="sr-only">Carregando...</span>
+    </div>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="login.html" class="logo">
+                <i class="fas fa-calendar-alt logo-icon" aria-hidden="true"></i>
+                <span>SyncEventos</span>
+            </a>
+
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link btn btn-outline">Voltar ao Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="theme-toggle nav-link" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="auth-container">
+            <div class="auth-illustration">
+                <div>
+                    <h2>Junte-se à nossa comunidade</h2>
+                    <p>Conecte-se com pessoas que compartilham seus interesses e participe de eventos incríveis.</p>
+                </div>
+            </div>
+
+            <div class="auth-content">
+                <div class="auth-card">
+                    <div class="auth-header">
+                        <h1 class="auth-title">Bem-vindo de volta!</h1>
+                        <p class="auth-subtitle">Entre na sua conta para continuar</p>
+                    </div>
+
+                    <div class="auth-tabs">
+                        <div class="auth-tab active" data-tab="login">Login</div>
+                        <div class="auth-tab" data-tab="register">Cadastro</div>
+                    </div>
+
+                    <div class="auth-tab-content active" id="login-tab">
+                        <form class="auth-form" id="login-form">
+                            <div class="form-group">
+                                <label for="login-email" class="form-label">E-mail</label>
+                                <input type="email" id="login-email" class="form-control"
+                                    placeholder="Digite seu e-mail" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="login-password" class="form-label">Senha</label>
+                                <input type="password" id="login-password" class="form-control"
+                                    placeholder="Digite sua senha" required>
+                                <div style="text-align: right; margin-top: var(--space-xs);">
+                                    <a href="#forgot-password"
+                                        style="font-size: var(--text-sm); color: var(--primary);">Esqueceu a senha?</a>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" id="remember-me" class="form-check-input">
+                                <label for="remember-me" class="form-check-label">Lembrar de mim</label>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                            </div>
+                        </form>
+
+                        <div class="auth-divider">
+                            <span class="auth-divider-text">ou</span>
+                        </div>
+
+                        <div class="social-auth">
+                            <button type="button" class="social-btn">
+                                <i class="fab fa-google"></i>
+                            </button>
+                            <button type="button" class="social-btn">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="social-btn">
+                                <i class="fab fa-apple"></i>
+                            </button>
+                        </div>
+
+                        <div class="auth-footer">
+                            <p>Não tem uma conta? <a href="#register" class="auth-link switch-tab"
+                                    data-tab="register">Cadastre-se</a></p>
+                        </div>
+                    </div>
+
+                    <div class="auth-tab-content" id="register-tab">
+                        <form class="auth-form" id="register-form">
+                            <div class="form-group">
+                                <label for="register-name" class="form-label">Nome completo</label>
+                                <input type="text" id="register-name" class="form-control"
+                                    placeholder="Digite seu nome completo" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-email" class="form-label">E-mail</label>
+                                <input type="email" id="register-email" class="form-control"
+                                    placeholder="Digite seu e-mail" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-password" class="form-label">Senha</label>
+                                <input type="password" id="register-password" class="form-control"
+                                    placeholder="Crie uma senha" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="register-confirm-password" class="form-label">Confirmar senha</label>
+                                <input type="password" id="register-confirm-password" class="form-control"
+                                    placeholder="Confirme sua senha" required>
+                            </div>
+
+                            <div class="form-group form-check">
+                                <input type="checkbox" id="terms" class="form-check-input" required>
+                                <label for="terms" class="form-check-label">Eu concordo com os <a href="#"
+                                        style="color: var(--primary);">Termos de Serviço</a> e <a href="#"
+                                        style="color: var(--primary);">Política de Privacidade</a></label>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-block">Criar conta</button>
+                            </div>
+                        </form>
+
+                        <div class="auth-divider">
+                            <span class="auth-divider-text">ou</span>
+                        </div>
+
+                        <div class="social-auth">
+                            <button type="button" class="social-btn">
+                                <i class="fab fa-google"></i>
+                            </button>
+                            <button type="button" class="social-btn">
+                                <i class="fab fa-facebook-f"></i>
+                            </button>
+                            <button type="button" class="social-btn">
+                                <i class="fab fa-apple"></i>
+                            </button>
+                        </div>
+
+                        <div class="auth-footer">
+                            <p>Já tem uma conta? <a href="#login" class="auth-link switch-tab" data-tab="login">Faça
+                                    login</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

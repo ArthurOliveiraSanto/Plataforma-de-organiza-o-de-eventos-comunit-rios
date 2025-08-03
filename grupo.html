@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grupos</title>
+    <link rel="stylesheet" href="grupo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-spinner"></div>
+        <span class="sr-only">Carregando...</span>
+    </div>
+
+    <header id="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-calendar-alt logo-icon" aria-hidden="true"></i>
+                <span>SyncEventos</span>
+            </a>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="grupo.html" class="nav-link active">Grupos</a></li>
+                    <li class="nav-item"><a href="evento.html" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                    <li class="nav-item"><a href="fee.html" class="nav-link">Feedback</a></li>
+                    <li class="nav-item"><a href="categoria.html" class="nav-link ">Categoria</a></li>
+                    </a></li>
+
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle">
+                            <img src="foto(xandao).jpg" alt="Foto do perfil" class="nav-avatar">
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="perfil.html" class="dropdown-item">Meu Perfil</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="theme-toggle nav-link" aria-label="Alternar tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">Grupos Comunitários</h1>
+                <div class="page-actions">
+                    <button class="btn btn-primary" id="create-group-button">
+                        <i class="fas fa-plus"></i>
+                        <span>Criar Grupo</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="filters">
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="Buscar grupos...">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <div class="filter-item">
+                    <button class="filter-select active">Todos</button>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-select">Meus Grupos</button>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-select">Recomendados</button>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-select">Populares</button>
+                </div>
+                <div class="filter-item">
+                    <button class="filter-select">Novos</button>
+                </div>
+            </div>
+
+            <div class="groups-container">
+                <div class="group-card">
+                    <div class="group-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80')">
+                        <span class="group-category">Tecnologia</span>
+                    </div>
+                    <div class="group-body">
+                        <h3 class="group-title">TEXTO</h3>
+                        <p class="group-description">Grupo para desenvolvedores JavaScript de todos os níveis
+                            compartilharem conhecimento e experiências.</p>
+                        <div class="group-meta">
+                            <span><i class="fas fa-users"></i> 1.2k membros</span>
+                            <span><i class="fas fa-calendar-alt"></i> 5 eventos/mês</span>
+                        </div>
+                        <div class="group-footer">
+                            <div class="group-members">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <span class="group-member-count">+25</span>
+                            </div>
+
+                            <button class="btn btn-outline btn-sm"> <a href="dgrupo.html"
+                                    class="nav-link ">Participar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <div class="group-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80')">
+                        <span class="group-category">Negócios</span>
+                    </div>
+                    <div class="group-body">
+                        <h3 class="group-title">TEXTO</h3>
+                        <p class="group-description">Comunidade para empreendedores digitais trocarem ideias, parcerias
+                            e aprendizados.</p>
+                        <div class="group-meta">
+                            <span><i class="fas fa-users"></i> 850 membros</span>
+                            <span><i class="fas fa-calendar-alt"></i> 3 eventos/mês</span>
+                        </div>
+                        <div class="group-footer">
+                            <div class="group-members">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <span class="group-member-count">+18</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm"> <a href="dgrupo.html"
+                                    class="nav-link ">Participar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <div class="group-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1541178735493-479c1a27ed24?auto=format&fit=crop&w=600&q=80')">
+                        <span class="group-category">Arte</span>
+                    </div>
+                    <div class="group-body">
+                        <h3 class="group-title">TEXTO</h3>
+                        <p class="group-description">Comunidade de artistas urbanos que organizam exposições e
+                            workshops.</p>
+                        <div class="group-meta">
+                            <span><i class="fas fa-users"></i> 420 membros</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2 eventos/mês</span>
+                        </div>
+                        <div class="group-footer">
+                            <div class="group-members">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <span class="group-member-count">+12</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm"> <a href="dgrupo.html"
+                                    class="nav-link ">Participar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <div class="group-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80')">
+                        <span class="group-category">Negócios</span>
+                    </div>
+                    <div class="group-body">
+                        <h3 class="group-title">TEXTO</h3>
+                        <p class="group-description">Rede de empreendedores e startups para networking e troca de
+                            experiências.</p>
+                        <div class="group-meta">
+                            <span><i class="fas fa-users"></i> 1.5k membros</span>
+                            <span><i class="fas fa-calendar-alt"></i> 4 eventos/mês</span>
+                        </div>
+                        <div class="group-footer">
+                            <div class="group-members">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <span class="group-member-count">+30</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm"> <a href="dgrupo.html"
+                                    class="nav-link ">Participar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <div class="group-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=600&q=80')">
+                        <span class="group-category">Esportes</span>
+                    </div>
+                    <div class="group-body">
+                        <h3 class="group-title">TEXTO</h3>
+                        <p class="group-description">Grupo para amantes de corrida de rua organizarem treinos e eventos.
+                        </p>
+                        <div class="group-meta">
+                            <span><i class="fas fa-users"></i> 680 membros</span>
+                            <span><i class="fas fa-calendar-alt"></i> 6 eventos/mês</span>
+                        </div>
+                        <div class="group-footer">
+                            <div class="group-members">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <span class="group-member-count">+20</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm"> <a href="dgrupo.html"
+                                    class="nav-link ">Participar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group-card">
+                    <div class="group-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=600&q=80')">
+                        <span class="group-category">Música</span>
+                    </div>
+                    <div class="group-body">
+                        <h3 class="group-title">TEXTO</h3>
+                        <p class="group-description">Comunidade para músicos independentes colaborarem e organizarem
+                            shows.</p>
+                        <div class="group-meta">
+                            <span><i class="fas fa-users"></i> 320 membros</span>
+                            <span><i class="fas fa-calendar-alt"></i> 2 eventos/mês</span>
+                        </div>
+                        <div class="group-footer">
+                            <div class="group-members">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <img src="foto(xandao).jpg" alt="Membro" class="group-member-avatar">
+                                <span class="group-member-count">+15</span>
+                            </div>
+                            <button class="btn btn-outline btn-sm"> <a href="dgrupo.html"
+                                    class="nav-link ">Participar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal" id="create-group-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Criar Novo Grupo</h3>
+                <button class="modal-close" aria-label="Fechar modal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <form id="create-group-form">
+                <div class="form-group">
+                    <label for="group-name" class="form-label">Nome do Grupo</label>
+                    <input type="text" id="group-name" class="form-control"
+                        placeholder="Ex: Desenvolvedores JavaScript SP" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="group-category" class="form-label">Categoria</label>
+                    <select id="group-category" class="form-control" required>
+                        <option value="">Selecione uma categoria</option>
+                        <option value="technology">Tecnologia</option>
+                        <option value="business">Negócios</option>
+                        <option value="art">Arte</option>
+                        <option value="sports">Esportes</option>
+                        <option value="music">Música</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="group-description" class="form-label">Descrição</label>
+                    <textarea id="group-description" class="form-control form-textarea"
+                        placeholder="Descreva o propósito do grupo" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="group-location" class="form-label">Localização</label>
+                    <input type="text" id="group-location" class="form-control" placeholder="Cidade, Estado" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="group-privacy" class="form-label">Privacidade</label>
+                    <select id="group-privacy" class="form-control" required>
+                        <option value="public">Público (qualquer um pode participar)</option>
+                        <option value="private">Privado (requer aprovação)</option>
+                    </select>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline modal-close">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Criar Grupo</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="grupo.js"></script>
+</body>
+
+</html>
